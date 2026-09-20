@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/servicemaxiuz-coder/ECU-Immo-Doctor-Updates/schemas/update-envelope.schema.json",
+  "title": "ECU Immo Doctor signed update envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["payload", "signature"],
+  "properties": {
+    "payload": { "type": "string", "minLength": 1 },
+    "signature": { "type": "string", "minLength": 1 }
+  }
+}
